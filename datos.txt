@@ -1,0 +1,137 @@
+# Resumen del curso Open Bootcamp
+## Primer resumen -> Principios de logica y programacion:
+* Sabado 28 de mayo de 2022 *
+
+### Tipos de lenguaje de programacion:
+#### 1)- Tipos de lenguajes compilados: apartir de nuestro codigo se genera un programa(entre 0 y 1 binario) que el compilador ejecuta en el sistema operativo (c,go).
+~~~~ Ventajas: va mucho mas rapido
+~~~~ Desventaja: Se necesita un interprete para cada arquitectura de software
+
+#### 2)- Tipos de lenguajes interpretados: Se puede compilar de forma intermedia, necesita un interprete para ejecutar el codigo paso a paso en el mismo interpretador(java,python,php)
+~~~~ Ventajas: escribo el codigo una vez y si encuentro un interprete me olvido
+~~~~ Desventaja: es mas lento
+
+#### 3)- Hibridos: Tiene lo bueno del interprete y compilador.
+
+
+-----------------------------------------------------------------------------------------------
+
+
+### Tipados de lenguajes de programacion:
+#### TIPADO: son aquellos en los que yo debo especificar los tipos de datos que vamos a usar 
+#### NO TIPADO: son aquellos en donde tengo la libertad de usar variables sin especificar su tipo de dato.
+
+
+-----------------------------------------------------------------------------------------------
+
+
+### Aplicaciones cliente-servidor: Frontend, Backend.
+
+### Memoria y variables: 
+#### La memoria(por mas que paresca) tiene un limite, no es infinita. Tiene una capacidad limitada.
+#### Varibles es el nombre humano que le damos a una direccion de nuestra memoria que almacena un dato y ese dato puede ser modificado en cualquier momento.
+#### Contantes es el nombre humano que le damos a una direccion de memoria que almacena un dato pero este dato no puede ser modificado.
+
+
+-----------------------------------------------------------------------------------------------
+
+
+### Tipos de datos primitivos: es un tipo de dato basico de cualquier dato.
+#### 1)-Caracter: Representa un unico caracter(tabla ASCII) -> 'a' , 9 , '/';
+#### 2)-Texto o string: Cadena de texto,pero esta cadena esta formado por un conjunto de caracteres : "texto" + 0. Internamente para saber cuando termina el lenguaje o interprete agrega un 0 para indicar que termina
+#### 3)-Integer: Numeros enteros(1234)
+#### 4)-Real o Float: Numeros con decimal(23.12)
+#### 5)-Boolean: solo puede tener 2 valores de los posibles -> 0 o 1 , TRUE o FALSE.
+
+### Tipos de datos compuesto: son tipos de datos basados en los primitivos.
+#### 1)-Arrays: conjuntos de datos separados por coma ya vistos pero de un MISMO TIPO -> numero = [1,2,3]. Puedo tener arrays de arrays y sucesivamente -> arrays = [ ['a','b','c'] , ["Hola","Mundo"] , [1,2,3]]
+#### 2)-Tupla : A diferencia de los array sus variables son inmutables -> tupla = (a,b,c)
+#### 3)-Array asociativo o Objetos -> paises [ clave -> valor] ejemplo: paises [ p1 => españa, p2 => EEUU].
+Estos tiene un elemento clave y otro valor, que es el valor de dicha clave.
+#### 4)-Objeto: Tiene propiedades y metodos que son los que pueden alterar esas propiedades.
+Juguete:
+    Propiedades 
+        -> color:blanco
+        -> Forma:rectangular.
+    Metodos:
+        -> Poner Sombrero
+        -> Quitar Brazo
+
+ejemplo en java: 
+class Juguete{
+    String Color = "blanco";
+    String Forma = "rectangular";
+    Int Largo = 20;
+
+    PonerSombrero(){}
+    QuitarBrazo(){}
+}
+
+
+-----------------------------------------------------------------------------------------------
+
+
+### Funciones: Una funcion nos evita tener que escribir codigo, entonces la funciones son reutilizables, donde pueden tener o no parametros.
+#### Declaracion de funcion en JAVA:
+// el int antes del nombre de la suma indica los valores que recibe y retorna
+// ¿Como invoco a la funcion? -> colocando el nombre donde deseo y los parametros que tiene asignado: suma()
+public class Main {
+
+    public static void main(String[] arg){
+        int resultado;
+        resultado = suma(10,30);
+        System.out.println(resultado);
+    }
+
+    //CON RETORNO
+    public static int suma(int a, int b){ 
+        return a + b;
+    }
+
+    //SIN RETORNO
+    public static void suma(int a, int b){ 
+        int resultado;
+        resultado = a + b;
+        System.out.println(resultado);
+    }
+}
+
+###FUNCION RECURSICA -> cuando lo que retonar una funcion realiza la invocacion a una misma o otra funcion.
+###CALLBAKCS -> Asignar a una variable una funcion : miVariable = function()  ->  miVariable();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
